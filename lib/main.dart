@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/home/home.dart';
+import 'package:notes_app/splashScreen/splashScreen.dart';
 import 'package:notes_app/theme/themeing.dart';
 
 void main() {
@@ -11,8 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: ,
+      initialRoute: SplashScreen.routeName,
       routes: {
+        SplashScreen.routeName : (context) => SplashScreen(),
+        HomeScreen.routeName :(context) => HomeScreen(),
 
       },
       locale: Locale("en"),
