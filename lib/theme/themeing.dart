@@ -17,6 +17,11 @@ class Mytheme{
      elevation: 0 ,
      centerTitle: true
    ),
+   textTheme: TextTheme(
+     headline1: TextStyle(
+       color: Colors.white , fontSize: 20 , fontWeight: FontWeight.bold
+     )
+   )
 
  );
   static ThemeData darkTheme = ThemeData(
@@ -27,8 +32,12 @@ class Mytheme{
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30) , bottomRight: Radius.circular(30)),
         ),
         elevation: 0 ,
+        iconTheme: IconThemeData(
+          color: Colors.white
+        ),
         centerTitle: true
     ),
+
 
   );
 

@@ -1,0 +1,19 @@
+{
+"note_list" : "Notes List" ,
+"settings" : "Settings" ,
+"share" : "Share" ,
+"no_note_yet" : "There is no note yet" ,
+"add" : "Add" ,
+"update" : "Update" ,
+"enter_title" : "Enter Title" ,
+"enter_descr" : "Enter Description" ,
+"delete" : "Delete" ,
+"required" : "This is required" ,
+"english" : "English" ,
+"arabic" : "Arabic" ,
+"light" : "Light" ,
+"dark" : "Dark" ,
+"notes_drawer" : "Notes App !" ,
+"done" : "Done !" ,
+"update_note" : "Update Note"
+}
