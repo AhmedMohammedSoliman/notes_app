@@ -55,28 +55,6 @@ class _SettingScreenState extends State<SettingScreen> {
                },
              ),
            ),
-           SizedBox(height: 20,),
-           Container(
-             width: double.infinity,
-             margin: EdgeInsets.symmetric(horizontal: 20 , vertical: 20),
-             child: CustomDropdownButton2(
-               dropdownWidth: 300,
-               buttonDecoration: BoxDecoration(
-                   color: Colors.white ,
-                   borderRadius: BorderRadius.circular(30)
-               ),
-               hint: 'Select Item',
-               dropdownItems: themeItems,
-               value: widget.selectedItemTheme,
-               onChanged: (value) {
-                 setState(() {
-                   widget.selectedItemTheme = value!;
-                   widget.selectedItemTheme == "Light" ? provider.changeMode(ThemeData.light()) :
-                       ThemeData.dark();
-                 });
-               },
-             ),
-           ),
          ],
        )
      ),

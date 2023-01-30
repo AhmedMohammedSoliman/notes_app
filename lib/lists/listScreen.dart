@@ -6,6 +6,7 @@ import 'package:notes_app/lists/listItem.dart';
 import 'package:calendar_timeline/calendar_timeline.dart';
 import '../firebase/firebase_funs.dart';
 import 'listModel.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ListScreen extends StatefulWidget{
 
@@ -20,6 +21,7 @@ class _ListScreenState extends State<ListScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     getNotesFromFireBase();
     return SafeArea(
       child: Scaffold(
@@ -51,7 +53,7 @@ class _ListScreenState extends State<ListScreen> {
                 ),
                 Expanded(
                   child: notesList.length == 0 ? Center(
-                    child: Text("There is no note yet" , style: TextStyle(
+                    child: Text(AppLocalizations.of(context)!.there_is_no_note_yet, style: TextStyle(
                       color: Colors.white
                     ),),
                   ) :

@@ -125,7 +125,7 @@ class _UpdateNoteState extends State<UpdateNote> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30)
               ),
-              leading: Text("Done !" , style: TextStyle(color: Colors.blue , fontSize: 25),),
+              leading: Text(AppLocalizations.of(context)!.done , style: TextStyle(color: Colors.blue , fontSize: 25),),
               trailing: Icon(Icons.price_check_outlined , size: 30, color: Colors.blue,),
             ),
           ));

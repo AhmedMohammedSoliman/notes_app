@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../lists/listModel.dart';
 
 
@@ -28,7 +28,7 @@ Future <void> deleteNoteFromFireBase (NoteModel note, BuildContext context)async
            shape: RoundedRectangleBorder(
                borderRadius: BorderRadius.circular(30)
            ),
-           leading: Text("Done !" , style: TextStyle(color: Colors.blue , fontSize: 25),),
+           leading: Text(AppLocalizations.of(context)!.done, style: TextStyle(color: Colors.blue , fontSize: 25),),
            trailing: Icon(Icons.price_check_outlined , size: 30, color: Colors.blue,),
          ),
        )
